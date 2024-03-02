@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0;padding:0; 
+  box-sizing:border-box;
+  outline:none;border:none;
+  text-decoration:none;
+  text-transform:capitalize;
+  transition:all .2s linear;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top:6rem;
+}
+body{
+    background-color:black;   
+}
+section{
+    padding:2rem 9%;
+}
+header{
+    margin:2rem;
+    padding:2rem;
+    font-size:4rem;
+    text-align:center;
+    color:#f4a950;
+    font-weight:bold;
+}
+.home{
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:25rem;
+    min-height:70vh;
+    align-items:center;
+}
+.home .content{
+    flex:1 1 40rem;
+}
+.home .image{
+    flex:1 1 40rem;
+}
+.home .image img{
+    width:100%;
+}
+.home .content h1{
+  font-size:4rem;
+  color:#f4a950;  
+  text-align:left;
+}
+.home .content li{
+    font-size:2rem;
+    color:white;  
+    text-transform: none;
+  }
+.highlights{
+    min-height:70vh;
+}
+.highlights h1{
+    color:#f4a950;
+    font-size:4rem;
+    text-align:center;
+    margin:2rem;
+}
+.highlights .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(32rem,1fr));
+    gap:1.5rem;
+    align-items:flex-start;
+    margin-top:3rem;
+}
+.highlights .box-container .box{
+    border-radius:.5rem;
+    padding:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:3rem;
+    background:#212122;
+}
+.highlights .box-container .box i{
+    font-size:5rem;
+    color:white;
+    align-items:center;
+}
+.highlights .box-container .box .content h2{
+    font-size:2rem;
+    color:#EDEADE
+}
+h1{
+    color:#f4a950;
+    font-size:4rem;
+    text-align:center;
+}
+.certificate{
+    padding:2rem;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:25rem;
+    min-height:70vh;
+    align-items:center;
+}
+.certificate .content{
+    flex:1 1 40rem;
+}
+.certificate .image{
+    flex:1 1 40rem;
+}
+.certificate .image img{
+    width:100%;
+}
+.certificate .content h1{
+  font-size:3rem;
+  color:#f4a950;  
+}
+.certificate .content li{
+    font-size:2.5rem;
+    color:white;  
+  }
+.process h2{
+    color:#f4a950;
+    font-size:4rem;
+    text-align:center;
+    margin:2rem;
+}
+.process{
+    min-height:80vh;
+}
+.process h1{
+    color:#f4a950;
+    font-size:4rem;
+    text-align:center;
+    margin:2rem;
+}
+.process .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(32rem,1fr));
+    gap:1.5rem;
+    align-items:flex-start;
+    margin-top:3rem;
+}
+.process .box-container .box{
+    border-radius:.5rem;
+    padding:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:3rem;
+    background:#212122;
+}
+.process .box-container .box i{
+    font-size:5rem;
+    color:white;
+    align-items:center;
+}
+.process .box-container .box .content h2{
+    font-size:2rem;
+    color:#EDEADE
+}
+@media (max-width:1350px)
+{   
+    .certificate{
+        column-gap:7rem;
+        padding:1rem;
+    }
+}
+@media(max-width:1281px)
+{
+    .home ul{
+        text-align:left;
+    }
+
+    .home{
+        text-align:center;
+        gap:2rem;
+    }
+    .certificate{
+        column-gap:3rem;
+    }
+}
+@media(max-width:1040px)
+{
+    .certificate{
+        padding:2rem;
+        gap:2rem;
+    }
+    .certificate ul{
+        text-align:left
+    }
+    .certificate .image{
+       text-align:center;
+        margin:0 auto;
+    }
+    .certificate .image img{
+        width:70%;
+    }
+}
+@media(max-width:991px)
+{
+    .highlights .box-container .box{
+        padding:2rem;
+    }
+    .highlights .box-container .box h2{
+        font-size:1.7rem;
+    }
+    .process .box-container{
+        gap:1rem;
+    }
+    .process .box-container .box{
+        padding:2rem;
+    }
+    .process .box-container .box h2{
+        font-size:1.7rem;
+    }
+}
+@media(max-width:768px)
+{
+    html{
+        font-size:55%;
+    }
+}
+@media(max-width:400px)
+{
+    html{
+        font-size:50%;
+    }
+    .home .image img{
+        width:100%;
+    }
+    .certificate .image img{
+        width:100%;
+    }
+}
